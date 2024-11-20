@@ -2,7 +2,7 @@
     <form wire:submit="save">
         <label class="block">
             <span class="block text-sm font-medium text-slate-700">Title</span>
-            <x-ts-input type="text" wire:model="title" />
+            <x-input type="text" wire:model="title" />
             <p
                 class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"
             >
@@ -18,7 +18,7 @@
             <span class="block text-sm font-medium text-slate-700"
                 >Content</span
             >
-            <x-ts-input type="text" wire:model="content" />
+            <x-input type="text" wire:model="content" />
             <p
                 class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"
             >
@@ -30,6 +30,6 @@
             <span class="error">{{ $message }}</span> @enderror
         </div>
 
-        <x-ts-button class="float-right" type="submit">Create</x-ts-button>
+        <x-button class="float-right" type="submit">Create</x-button>
     </form>
 </div>
