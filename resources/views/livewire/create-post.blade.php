@@ -2,7 +2,7 @@
     <form wire:submit="save">
         <label class="block">
             <span class="block text-sm font-medium text-slate-700">Title</span>
-            <x-input type="text" wire:model="title" />
+            <x-ts-input type="text" wire:model.live="title" />
             <p
                 class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"
             >
@@ -18,7 +18,7 @@
             <span class="block text-sm font-medium text-slate-700"
                 >Content</span
             >
-            <x-input type="text" wire:model="content" />
+            <x-ts-input type="text" wire:model.live="content" />
             <p
                 class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm"
             >
